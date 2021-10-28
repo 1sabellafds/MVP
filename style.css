@@ -1,0 +1,93 @@
+*{
+    margin: 0;/*Usando para o indice-menuzinho*/
+    padding: 0; /*Usando para o indice-menuzinho*/
+    box-sizing: border-box; /*Usando para o indice-menuzinho*/
+    font-family: 'IBM Plex Serif', serif; /*Usando para o indice-menuzinho*/  
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.tech.co/wp-content/uploads/2021/02/03115420/Fact-or-Fake.jpeg); /*imagem de fundo*/  
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header .menu li {
+    display: inline-block;
+}
+
+header .menu a{
+    color: aliceblue;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo, header .menu a:hover{
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+h1 {
+    color:azure;
+    padding-left: 80px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.principal h2{
+    color: azure;
+    font-size: 20px;
+    margin-top: 470px; /*combate a fake news*/ 
+}
+
+.principal .links a{
+    color: azure;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 417px;
+    transition: 300ms;
+}
+
+.principal .links a:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(126, 120, 119);
+}
+
+footer{
+    background-color: #ffffff;
+    padding-top: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: -40px;
+}
+
+
+
+
+

@@ -1,0 +1,106 @@
+*{
+    margin: 0;/*Usando para o indice-menuzinho*/
+    padding: 0; /*Usando para o indice-menuzinho*/
+    box-sizing: border-box; /*Usando para o indice-menuzinho*/
+    font-family: 'IBM Plex Serif', serif;
+    
+}
+
+header{
+    width: 100%;
+    height: 96vh;
+    background-image: url(); /*imagem de fundo*/  
+    background-position: center;
+    background-size: cover;
+    background-color: #1f1e1e; /*cor da pagina*/  
+}
+
+a{
+    text-decoration: none;
+}
+
+header .menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header .menu li {
+    display: inline-block;
+    
+}
+
+header .menu a{
+    color: rgb(255, 255, 255); /*cor do menu*/  
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo, header .menu a:hover{
+    color: #ffffff; /*cor dos botoes*/  
+    background-color: #273949;
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.principal h2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 30px; /*combate a fake news*/ 
+    
+}
+
+h1 {
+    color:azure;
+    padding-left: 80px;
+    
+}
+
+.principal p{
+    margin-top: 22px;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    color:#ffffff;
+    text-align: left;
+    text-align: justify;
+    
+}
+
+.principal .links a{
+    color: rgb(159, 96, 196);
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: 300ms;
+}
+
+.principal .links a:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(93, 141, 16);
+}
+
+footer{
+    background-color: #ffffff;
+    padding-top: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: -40px;
+}
+
+
+

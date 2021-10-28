@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <title>chatbot-MVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <h1>COMBATA A FAKE NEWS</h1>  
+            <ul>
+                <li><a href="index.html" class="ativo">Inicio</a></li>
+                <li><a href="sobreprojeto.html" class="ativo" >Sobre o projeto</a></li> <!--MENU-->
+                <li><a href="chatbot.html" class="ativo" >Chatbot</a></li>
+            </ul>
+        </nav> <!--MENU-->
+
+        <section class="principal">
+            <h2>Sobre o chatbot</h2>
+            <p>Conhecendo o chatbot:<br>
+            Antes de começar a falar sobre o assunto principal que são as
+                fake news, gostaria de explicar um pouco sobre o que é um
+                chatboot e como ele pode te auxiliar. <br>
+                O chatbot é um software que conversa com uma pessoa de 
+                maneira natural, atendendo suas necessidades de forma rápida
+                e assertiva.  </p> <br> 
+
+            <p> Objetivo:<br> 
+            E o objetivo do chatbot criado, é auxiliar contra as fake
+                news. Onde você poderá fazer perguntas como: <br> 
+		        - O que é fake news; <br> 
+		        - Como identificar uma noticia falsa; <br> 
+		        - Sites confiáveis; <br> 
+		        - Busca de notícias que foram comprovadas serem falsas;<br> 
+            </p>
+
+            <p>Como utilizar o chatbot: <br>
+                Para utilizar o chatbot é muito simples. Para começar ela se encontra 
+                no lado direito inferior do site, click nela e inicie uma conversar ou
+                pergunte sobre fake news. Ela está para te auxiliar nesse assunto. 
+            </p>
+            
+
+        </section> <!--MENU-->
+    </header>
+
+    <footer>
+        <p>Isabella Ferreira  | Projeto Final - MVP  </p>
+        <p> IBM - 2021 </p>
+    </footer>
+ 
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "ec1fff5a-5a14-4acb-a467-25a230db6472", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "f1920e28-0321-45fe-94b6-920115ea8097", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>
